@@ -1,8 +1,24 @@
-JWT Attack
+WebAcademy
 
-Kumpulan catatan belajar dan writeup lab JWT Attack dari PortSwigger Web Security Academy.
+Repository ini berisi catatan belajar pribadi, rangkuman materi, dan writeup lab dari PortSwigger Web Security Academy.
+
+Topik
+
+- JWT Attack
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Access Control
+- SSRF
+- File Upload Vulnerabilities
+- Authentication Vulnerabilities
+- Path Traversal
+- OS Command Injection
+- Business Logic Vulnerabilities
+- Dan topik lainnya dari PortSwigger Web Security Academy
 
 Lab yang Sudah Diselesaikan
+
+JWT Attack
 
 No| Lab
 01| Unverified Signature
@@ -16,36 +32,11 @@ No| Lab
 
 Catatan Tambahan
 
-- JWT Summary
-- KID Abuse Notes
-
-Materi yang Dipelajari
-
-Masalah Verifikasi JWT
-
-- Unverified Signature
-- alg:none
-
-Secret yang Lemah
-
-- Weak Signing Key
-
-Injeksi Public Key
-
-- JWK Injection
-- JKU Injection
-
-Penyalahgunaan Lookup Key
-
-- KID Path Traversal
-- KID Abuse
-
-Manipulasi Algoritma
-
-- Algorithm Confusion
+- jwt-summary.md
+- jwt-kid-abuse-notes.md
 
 Tujuan Repository
 
-Repository ini berisi catatan belajar pribadi selama mempelajari JWT Attack di PortSwigger Web Security Academy.
+Repository ini dibuat untuk mendokumentasikan proses belajar web security melalui lab PortSwigger Web Security Academy.
 
-Catatan dibuat untuk membantu memahami konsep, alur serangan, pertanyaan yang muncul saat belajar, serta rangkuman materi agar lebih mudah dipelajari kembali di kemudian hari.
+Setiap topik berisi catatan, rangkuman, writeup singkat, serta pemahaman yang didapat selama proses belajar agar lebih mudah dipelajari kembali di kemudian hari.
