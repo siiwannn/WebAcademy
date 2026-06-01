@@ -1,8 +1,8 @@
-WebAcademy
+# WebAcademy
 
 Repository ini berisi catatan belajar pribadi, rangkuman materi, dan writeup lab dari PortSwigger Web Security Academy.
 
-Topik
+## Topik
 
 - JWT Attack
 - SQL Injection
@@ -16,26 +16,27 @@ Topik
 - Business Logic Vulnerabilities
 - Dan topik lainnya dari PortSwigger Web Security Academy
 
-Lab yang Sudah Diselesaikan
+## Lab yang Sudah Diselesaikan
 
-JWT Attack
+### JWT Attack
 
-No| Lab
-01| Unverified Signature
-02| alg:none
-03| Weak Signing Key
-04| JWK Injection
-05| JKU Injection
-06| KID Path Traversal
-07| Algorithm Confusion
-08| Algorithm Confusion (No Exposed Key)
+| No | Lab |
+|----|-----|
+| 01 | Unverified Signature |
+| 02 | alg:none |
+| 03 | Weak Signing Key |
+| 04 | JWK Injection |
+| 05 | JKU Injection |
+| 06 | KID Path Traversal |
+| 07 | Algorithm Confusion |
+| 08 | Algorithm Confusion (No Exposed Key) |
 
-Catatan Tambahan
+## Catatan Tambahan
 
 - jwt-summary.md
 - jwt-kid-abuse-notes.md
 
-Tujuan Repository
+## Tujuan Repository
 
 Repository ini dibuat untuk mendokumentasikan proses belajar web security melalui lab PortSwigger Web Security Academy.
 
