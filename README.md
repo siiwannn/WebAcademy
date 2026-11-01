@@ -1,42 +1,13 @@
-<a id="readme-top"></a>
+# WebAcademy
 
-<div align="center">
+[![PortSwigger Web Security Academy](https://img.shields.io/badge/PortSwigger-Web%20Security%20Academy-FF6633?logo=portswigger&logoColor=white)](https://portswigger.net/web-security)
+[![License: MIT](https://img.shields.io/badge/Lisensi-MIT-blue.svg)](LICENSE)
 
-<h1>WebAcademy</h1>
+Arsip catatan belajar dan writeup teknis dari **PortSwigger Web Security Academy**. Setiap catatan mendokumentasikan akar masalah, alasan di balik eksploitasi, payload yang dipakai, dan cara memperbaikinya.
 
-<p>Catatan belajar dan writeup teknis dari <strong>PortSwigger Web Security Academy</strong>.<br />
-Dokumentasi akar masalah, proses eksploitasi, payload, dan rekomendasi perbaikan.</p>
-
-[![PortSwigger Web Security Academy][portswigger-shield]][portswigger-url]
-[![License][license-shield]][license-url]
-
-</div>
+Saat ini berisi **31 lab** yang tersebar dalam **8 kategori**, dengan fokus pada autentikasi, kontrol akses, keamanan API, dan mekanisme caching.
 
 ---
-
-<details>
-<summary>Daftar Isi</summary>
-<ol>
-<li><a href="#ikhtisar">Ikhtisar</a></li>
-<li><a href="#fokus-pembelajaran">Fokus Pembelajaran</a></li>
-<li><a href="#struktur">Struktur</a></li>
-<li><a href="#indeks-catatan">Indeks Catatan</a></li>
-<li><a href="#metodologi">Metodologi</a></li>
-<li><a href="#tools">Tools</a></li>
-<li><a href="#referensi">Referensi</a></li>
-<li><a href="#lisensi">Lisensi</a></li>
-</ol>
-</details>
-
----
-
-## Ikhtisar
-
-Repository ini berisi **31 lab** dari **8 kategori** PortSwigger Web Security Academy, dengan penekanan pada autentikasi, kontrol akses, keamanan API, dan mekanisme caching.
-
-Setiap catatan disusun agar dapat dipelajari kembali tanpa membuka lab aslinya. Fokusnya bukan urutan langkah, tetapi alasan di balik setiap keputusan: mengapa celah itu ada, bagaimana dampaknya dibuktikan, dan kontrol apa yang seharusnya mencegahnya.
-
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Fokus Pembelajaran
 
@@ -47,7 +18,7 @@ Setiap catatan disusun agar dapat dipelajari kembali tanpa membuka lab aslinya. 
 - **GraphQL** — query introspection dan kebocoran field
 - **Injeksi** — validasi input dan filter bypass
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Struktur
 
@@ -65,7 +36,7 @@ WebAcademy/
 
 Setiap direktori berisi writeup dengan struktur seragam: tujuan lab, analisis, eksploitasi, payload, akar masalah, dan perbaikan.
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Indeks Catatan
 
@@ -150,7 +121,7 @@ Catatan pendukung: [Ringkasan JWT](JWT-Attack/jwt-summary.md) · [Penyalahgunaan
 
 </details>
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Metodologi
 
@@ -163,7 +134,7 @@ Setiap writeup mengikuti alur yang sama agar mudah dibandingkan dan dipelajari k
 
 Penekanan ada pada penalaran dan pola yang dapat dipakai ulang, bukan tangkapan layar langkah demi langkah.
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Tools
 
@@ -172,7 +143,7 @@ Penekanan ada pada penalaran dan pola yang dapat dipakai ulang, bukan tangkapan 
 - **JWT tooling** — decoding, signing, dan wordlist kustom
 - **GraphQL** — query introspeksi dan eksplorasi schema
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Referensi
 
@@ -180,19 +151,10 @@ Penekanan ada pada penalaran dan pola yang dapat dipakai ulang, bukan tangkapan 
 - [Web Security Academy Learning Paths](https://portswigger.net/web-security/learning-paths)
 - [Burp Suite Documentation](https://portswigger.net/burp/documentation)
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+---
 
 ## Lisensi
 
 Dirilis di bawah [MIT License](LICENSE).
 
 © 2026 Rijwan Maulana
-
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-[portswigger-shield]: https://img.shields.io/badge/PortSwigger-Web%20Security%20Academy-FF6633?style=for-the-badge&logo=portswigger&logoColor=white
-[portswigger-url]: https://portswigger.net/web-security
-[license-shield]: https://img.shields.io/badge/Lisensi-MIT-2ea44f?style=for-the-badge
-[license-url]: LICENSE
