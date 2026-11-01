@@ -1,33 +1,53 @@
-# WebAcademy
+<a id="readme-top"></a>
 
-[![PortSwigger Web Security Academy](https://img.shields.io/badge/PortSwigger-Web%20Security%20Academy-FF6633?logo=portswigger&logoColor=white)](https://portswigger.net/web-security)
-[![License: MIT](https://img.shields.io/badge/Lisensi-MIT-blue.svg)](LICENSE)
+<div align="center">
 
-Arsip catatan belajar dan writeup teknis dari **PortSwigger Web Security Academy**. Setiap catatan mendokumentasikan akar masalah, alasan di balik eksploitasi, payload yang dipakai, dan cara memperbaikinya.
+<h1>WebAcademy</h1>
 
-Saat ini berisi **31 lab** yang tersebar dalam **8 kategori**, dengan fokus pada autentikasi, kontrol akses, keamanan API, dan mekanisme caching.
+<p>Catatan belajar dan writeup teknis dari <strong>PortSwigger Web Security Academy</strong>.<br />
+Dokumentasi akar masalah, proses eksploitasi, payload, dan rekomendasi perbaikan.</p>
+
+[![PortSwigger Web Security Academy][portswigger-shield]][portswigger-url]
+[![License][license-shield]][license-url]
+
+</div>
+
+---
+
+<details>
+<summary>Daftar Isi</summary>
+<ol>
+<li><a href="#ikhtisar">Ikhtisar</a></li>
+<li><a href="#fokus-pembelajaran">Fokus Pembelajaran</a></li>
+<li><a href="#struktur">Struktur</a></li>
+<li><a href="#indeks-catatan">Indeks Catatan</a></li>
+<li><a href="#metodologi">Metodologi</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#referensi">Referensi</a></li>
+<li><a href="#lisensi">Lisensi</a></li>
+</ol>
+</details>
 
 ---
 
-## Tentang
+## Ikhtisar
 
-Saya **Rijwan Maulana** ([@siiwannn](https://github.com/siiwannn)). Repository ini mencatat proses belajar saya di bidang keamanan aplikasi web, mulai dari memahami konsep hingga membuktikan dampak eksploitasi dan merumuskan perbaikan.
+Repository ini berisi **31 lab** dari **8 kategori** PortSwigger Web Security Academy, dengan penekanan pada autentikasi, kontrol akses, keamanan API, dan mekanisme caching.
 
-Setiap catatan disusun agar bisa dibaca ulang tanpa perlu membuka lab-nya lagi: alasan di balik setiap langkah lebih penting daripada urutan klik.
+Setiap catatan disusun agar dapat dipelajari kembali tanpa membuka lab aslinya. Fokusnya bukan urutan langkah, tetapi alasan di balik setiap keputusan: mengapa celah itu ada, bagaimana dampaknya dibuktikan, dan kontrol apa yang seharusnya mencegahnya.
 
----
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Fokus Pembelajaran
 
-- Keamanan autentikasi dan sesi — JWT, OAuth, alur reset password
-- Kontrol akses dan celah logika bisnis
-- Server-Side Request Forgery (SSRF) dan serangan host header
-- Web cache poisoning dan web cache deception
-- Keamanan API — mass assignment, server-side parameter pollution, endpoint tersembunyi
-- Celah API GraphQL
-- Injeksi dan validasi input
+- **Autentikasi dan sesi** — JWT, OAuth, serta alur reset password
+- **Kontrol akses** — otorisasi, IDOR, dan celah logika bisnis
+- **Server-side** — SSRF, host header attacks, dan cache poisoning
+- **Keamanan API** — mass assignment, parameter pollution, dan endpoint tersembunyi
+- **GraphQL** — query introspection dan kebocoran field
+- **Injeksi** — validasi input dan filter bypass
 
----
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Struktur
 
@@ -43,7 +63,9 @@ WebAcademy/
 └── Web-Cache-Deception/    # Teknik cache deception
 ```
 
----
+Setiap direktori berisi writeup dengan struktur seragam: tujuan lab, analisis, eksploitasi, payload, akar masalah, dan perbaikan.
+
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Indeks Catatan
 
@@ -128,37 +150,49 @@ Catatan pendukung: [Ringkasan JWT](JWT-Attack/jwt-summary.md) · [Penyalahgunaan
 
 </details>
 
----
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
-## Cara Catatan Disusun
+## Metodologi
 
-1. **Akar masalah** — kerentanan yang sebenarnya, bukan gejala yang terlihat.
-2. **Proses penemuan** — observasi atau anomali yang mengarah ke celah tersebut.
-3. **Eksploitasi** — payload, request, dan mekanisme di baliknya.
-4. **Perbaikan** — kontrol defensif yang menghilangkan akar masalah.
+Setiap writeup mengikuti alur yang sama agar mudah dibandingkan dan dipelajari kembali:
 
-Penekanan ada pada penalaran dan pola yang bisa dipakai ulang, bukan tangkapan layar langkah demi langkah.
+1. **Identifikasi** — tentukan titik input dan perilaku aplikasi yang mencurigakan.
+2. **Analisis** — pahami akar masalah dan asumsi yang salah di sisi server.
+3. **Eksploitasi** — susun payload, buktikan dampaknya, dan catat responsnya.
+4. **Perbaikan** — rumuskan kontrol defensif yang menghilangkan akar masalah.
 
----
+Penekanan ada pada penalaran dan pola yang dapat dipakai ulang, bukan tangkapan layar langkah demi langkah.
+
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Tools
 
-Burp Suite (Repeater, Intruder, Collaborator), Browser DevTools, tool JWT dan wordlist kustom, serta query introspeksi GraphQL — semuanya dijalankan di lingkungan lab PortSwigger Web Security Academy.
+- **Burp Suite** — Repeater, Intruder, dan Collaborator
+- **Browser DevTools** — inspeksi request dan penyimpanan sisi klien
+- **JWT tooling** — decoding, signing, dan wordlist kustom
+- **GraphQL** — query introspeksi dan eksplorasi schema
 
----
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
-## Rencana Selanjutnya
+## Referensi
 
-- [ ] Menyelesaikan seri lab SQL Injection dan XSS
-- [ ] Menambahkan writeup access control dan autentikasi
-- [ ] Mendokumentasikan lab file upload dan path traversal
-- [ ] Menambahkan catatan HTTP request smuggling dan deserialization
-- [ ] Menerbitkan checklist metodologi pengujian yang ringkas
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [Web Security Academy Learning Paths](https://portswigger.net/web-security/learning-paths)
+- [Burp Suite Documentation](https://portswigger.net/burp/documentation)
 
----
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## Lisensi
 
 Dirilis di bawah [MIT License](LICENSE).
 
 © 2026 Rijwan Maulana
+
+<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[portswigger-shield]: https://img.shields.io/badge/PortSwigger-Web%20Security%20Academy-FF6633?style=for-the-badge&logo=portswigger&logoColor=white
+[portswigger-url]: https://portswigger.net/web-security
+[license-shield]: https://img.shields.io/badge/Lisensi-MIT-2ea44f?style=for-the-badge
+[license-url]: LICENSE
